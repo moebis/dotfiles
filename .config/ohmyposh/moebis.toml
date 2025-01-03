@@ -1,0 +1,52 @@
+version = 3
+
+[secondary_prompt]
+  template = '❯❯ '
+  foreground = 'magenta'
+  background = 'transparent'
+
+[[blocks]]
+  type = 'rprompt'
+  overflow = 'hidden'
+
+  [[blocks.segments]]
+    foreground = 'yellow'
+    background = 'transparent'
+    type = 'executiontime'
+    style = 'plain'
+
+  [[blocks.segments]]
+    template = ' {{ .CurrentDate | date .Format }} '
+    foreground = 'green'
+    type = 'time'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      time_format = '15:04:05'
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    template = '{{ .Path }} '
+    foreground = 'blue'
+    background = 'transparent'
+    type = 'path'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      style = 'full'
+
+  [[blocks.segments]]
+    template = '{{ .HEAD }} '
+    foreground = '#FFE700'
+    type = 'git'
+    style = 'plain'
+
+  [[blocks.segments]]
+    template = '❯ '
+    background = 'transparent'
+    type = 'text'
+    style = 'plain'
+    foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}green{{end}}']

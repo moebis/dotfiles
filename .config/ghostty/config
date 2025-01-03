@@ -1,0 +1,50 @@
+# FONT AND ICON
+#font-family = Menlo
+#font-family = "IBM Plex Mono"
+#font-family = "Berkeley Mono"
+font-size = 16
+#macos-icon = custom-style
+#macos-icon-frame = plastic
+#macos-icon-ghost-color = #00ff00
+#macos-icon-screen-color = #000000
+
+# SHADERS
+#custom-shader = /Users/moebis/Downloads/tft.glsl
+#custom-shader = /Users/moebis/Downloads/bloom.glsl
+#custom-shader = /Users/moebis/.config/ghostty/bettercrt.glsl
+#custom-shader = /Users/moebis/.config/ghostty/glitchy.glsl
+#custom-shader = /Users/moebis/.config/ghostty/inside-the-matrix.glsl
+#custom-shader = /Users/moebis/.config/ghostty/just-snow.glsl
+#custom-shader-animation = true
+
+# THEME AND COLORS
+#theme = "GitHub Dark"
+theme = catppuccin-mocha
+#theme = tokyonight
+#theme = Hacktober
+#theme = Dracula+
+#theme = electron-highlighter
+background = #0e0e1e
+#selection-background = #000000
+
+# WINDOW AND MISC
+
+window-colorspace = display-p3
+window-save-state = always
+#window-height = 40
+#window-width = 120
+window-padding-x = 10,10
+window-padding-y = 5,5
+window-padding-balance = true
+background-opacity = 0.9
+background-blur-radius = 20
+#window-step-resize = true
+mouse-hide-while-typing = true
+clipboard-read = allow
+clipboard-write = allow
+cursor-style = underline
+cursor-color = #a6e3a1
+adjust-underline-thickness = 3
+shell-integration-features = sudo,no-cursor
+unfocused-split-opacity = 0.6
+unfocused-split-fill = #000000
