@@ -3,6 +3,8 @@ zsh configuration files for macOS
 
 ## New Setup Steps
 
+Video Tutorial: https://www.youtube.com/watch?v=y6XCebnB9gs&t=284s
+
 ### Homebrew
 
 > /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -92,4 +94,26 @@ DS_Stores:
 git add .gitignore
 git commit -m '.DS_Store banished!'
 ```
+Initial git sync:
+```
+git remote add origin git@github.com:moebis/dotfiles.git
+git push origin main
+```
 
+Remove an origin:
+```
+git remote rm origin
+```
+
+GIT Key Creation:
+
+1. Generate SSH key using ssh-keygen -t rsa -b 4096 -C "your email".
+2. Copy the output of cat ~/.ssh/id_rsa.pub to your clipboard
+3. Paste the above-copied output to the form at https://github.com/settings/ssh/new
+4. Then go ahead to retry the operation that generated the initial fatal error.
+
+
+To Pull Down Git
+```
+git clone git@github.com:moebis/dotfiles.git
+```
