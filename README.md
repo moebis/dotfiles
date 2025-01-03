@@ -52,8 +52,46 @@ fastfetch
 ### Install Misc. Packages:
 
 ```
-brew install yazi ffmpeg 7-Zip jq poppler fd rg fzf zoxide ImageMagick bat eza dotfiles
+brew install yazi ffmpeg 7-Zip jq poppler fd rg fzf zoxide ImageMagick bat eza stow
 ```
+### stow command
+```
+nano ~/.stow-global-ignore
+```
+add to ignore:
+```
+RCS
+.+,v
+
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+\.DS_Store
+```
+create dotfiles and .gitignore
+```
+mkdir ~/dotfiles
+cd ~/dotfiles
+echo .DS_Store >> .gitignore
+stow .
+```
+
 ### git .zshrc initial commit and author settings
 ```
 git init .
