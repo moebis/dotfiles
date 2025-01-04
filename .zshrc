@@ -114,4 +114,12 @@ fi
 #Zoxide
 eval "$(zoxide init zsh)"
 
+#Remove underlines from zsh-syntax-highlighting
+(( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[path]=none
+ZSH_HIGHLIGHT_STYLES[path_pathseparator]=none
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]=none
+ZSH_HIGHLIGHT_STYLES[precommand]=none
+
 fastfetch
