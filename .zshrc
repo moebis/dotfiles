@@ -105,6 +105,19 @@ source $ZSH/oh-my-zsh.sh
 alias ls="eza --icons --group-directories-first"
 alias cat="bat -pp"
 
+#zsh duplicates
+# Don't record an entry that was just recorded
+setopt HIST_IGNORE_DUPS
+
+# Remove *older* duplicates of a new command entered
+setopt HIST_IGNORE_ALL_DUPS
+
+# (Optional) Don’t record commands that start with a space
+setopt HIST_IGNORE_SPACE
+
+# (Optional) Combine repeated commands into one (may keep the most recent)
+setopt HIST_REDUCE_BLANKS
+
 #Oh My Posh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 #  eval "$(oh-my-posh init zsh)"
