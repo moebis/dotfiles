@@ -151,7 +151,18 @@ GIT Key Creation:
 4. Then go ahead to retry the operation that generated the initial fatal error.
 
 
-To Pull Down Git
+To Pull Down Git Initially
 ```
 git clone git@github.com:moebis/dotfiles.git
 ```
+
+To Pull Down Changes
+```
+git pull
+```
+To Add Changes:
+```
+git commit -a
+git push origin main
+```
+
