@@ -52,7 +52,7 @@ fastfetch
 ### Install Misc. Packages:
 
 ```
-brew install yazi ffmpeg 7-Zip jq poppler fd rg fzf zoxide ImageMagick bat eza stow
+brew install yazi ffmpeg 7-Zip jq poppler fd rg fzf zoxide ImageMagick bat eza stow btop fastfetch
 ```
 ### stow command
 ```
