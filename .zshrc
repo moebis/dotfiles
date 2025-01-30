@@ -142,3 +142,6 @@ mv ~/.zsh_history.tmp ~/.zsh_history
 fc -R ~/.zsh_history
 
 fastfetch
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/moebis/.lmstudio/bin"
