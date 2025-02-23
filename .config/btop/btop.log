@@ -1,3 +1,7 @@
 
 2025/01/02 (10:01:13) | ===> btop++ v.1.4.0
 2025/01/02 (10:01:13) | ERROR: failed getting network interfaces
+
+2025/02/14 (19:56:23) | ===> btop++ v.1.4.0
+2025/02/14 (19:56:23) | ERROR: Stall in Runner thread, restarting!
+2025/02/14 (20:17:20) | ERROR: Stall in Runner thread, restarting!
