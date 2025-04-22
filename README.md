@@ -8,12 +8,11 @@ Video Tutorial: https://www.youtube.com/watch?v=y6XCebnB9gs&t=284s
 ### Homebrew
 
 > /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
->
-> Run these commands in your terminal to add Homebrew to your PATH:
-    echo >> /Users/moebis/.zprofile
+ Run these commands in your terminal to add Homebrew to your PATH:
+```    echo >> /Users/moebis/.zprofile
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/moebis/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
-
+```
 
 ### Oh-My-Zsh
 
