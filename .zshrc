@@ -135,7 +135,7 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]=none
 ZSH_HIGHLIGHT_STYLES[precommand]=none
 
-grep -v -E "^: [0-9]*:[0-9]*;(cd|ls|cat|awk|sed|rm|nano|z|bat|btop|mv|mkdir|cp|eza|cmatrix|yazu|uptime|whoami|free|err|Y|asdoo|vis|visudo|starship|p10k)" ~/.zsh_history > ~/.zsh_history.tmp
+grep -v -E "^: [0-9]*:[0-9]*;(cd|ls|cat|awk|sed|rm|z|bat|btop|mv|mkdir|cp|eza|cmatrix|yazu|uptime|whoami|free|err|Y|asdoo|vis|visudo)" ~/.zsh_history > ~/.zsh_history.tmp
 
 mv ~/.zsh_history.tmp ~/.zsh_history
 
