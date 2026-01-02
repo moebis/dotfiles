@@ -102,38 +102,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Custom
+
 alias ls="eza --icons --group-directories-first"
 alias cat="bat -pp"
 
-#zsh duplicates
-# Don't record an entry that was just recorded
-setopt HIST_IGNORE_DUPS
-
-# Remove *older* duplicates of a new command entered
-setopt HIST_IGNORE_ALL_DUPS
-
-# (Optional) Don’t record commands that start with a space
-setopt HIST_IGNORE_SPACE
-
-# (Optional) Combine repeated commands into one (may keep the most recent)
-setopt HIST_REDUCE_BLANKS
-
-#Oh My Posh
-if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-#  eval "$(oh-my-posh init zsh)"
-  eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/moebis.toml)"
-fi
+#oh-my-posh
+eval "$(oh-my-posh init zsh --config https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json)"
 
 #Zoxide
 eval "$(zoxide init zsh)"
-
-#Remove underlines from zsh-syntax-highlighting
-(( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[path]=none
-ZSH_HIGHLIGHT_STYLES[path_pathseparator]=none
-ZSH_HIGHLIGHT_STYLES[path_prefix]=none
-ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]=none
-ZSH_HIGHLIGHT_STYLES[precommand]=none
 
 grep -v -E "^: [0-9]*:[0-9]*;(cd|ls|cat|awk|sed|rm|z|bat|btop|mv|mkdir|cp|eza|cmatrix|yazu|uptime|whoami|free|err|Y|asdoo|vis|visudo)" ~/.zsh_history > ~/.zsh_history.tmp
 
@@ -143,5 +122,5 @@ fc -R ~/.zsh_history
 
 fastfetch
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/moebis/.lmstudio/bin"
+# Added by Antigravity
+export PATH="/Users/moebis/.antigravity/antigravity/bin:$PATH"
