@@ -12,5 +12,4 @@ background-blur-radius = 20
 window-colorspace = display-p3
 window-save-state = always
 term = xterm-256color
-custom-shader = ~/.config/ghostty/moebis_blaze.glsl
-
+custom-shader = ~/.config/ghostty/moebis.glsl
