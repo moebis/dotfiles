@@ -1,0 +1,16 @@
+# my custom stuff
+theme = Catppuccin Mocha
+#theme = TokyoNight
+font-size = 16
+clipboard-read = allow
+clipboard-write = allow
+clipboard-paste-protection = false
+window-padding-x = 10
+window-padding-y = 10
+background-opacity = 0.9
+background-blur-radius = 20
+window-colorspace = display-p3
+window-save-state = always
+term = xterm-256color
+custom-shader = ~/.config/ghostty/moebis_blaze.glsl
+
