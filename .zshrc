@@ -28,8 +28,10 @@ fc -R ~/.zsh_history
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+
+# Change these two lines to point to the "-end" versions:
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
 
 # Plugins
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
