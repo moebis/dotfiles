@@ -21,7 +21,7 @@ eval "$(starship init zsh)"
 starship preset catppuccin-powerline -o ~/.config/starship.toml
 Install Misc. Packages:
 
-brew install yazi ffmpeg 7-Zip jq poppler fd rg fzf zoxide ImageMagick bat eza stow btop fastfetch pastel navi atuin
+brew install yazi ffmpeg 7-Zip jq poppler fd rg fzf zoxide bat eza stow btop fastfetch pastel navi skills chafa imagemagick 
 brew install gromgit/brewtils/taproom
 
 Install MesloLGS Nerd Font Mono
