@@ -23,6 +23,7 @@ Install Misc. Packages:
 
 brew install yazi ffmpeg 7-Zip jq poppler fd rg fzf zoxide bat eza stow btop fastfetch pastel navi skills chafa imagemagick 
 brew install gromgit/brewtils/taproom
+brew install --cask xykong/tap/flux-markdown
 
 Install MesloLGS Nerd Font Mono
 
